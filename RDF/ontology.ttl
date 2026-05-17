@@ -1,0 +1,159 @@
+@prefix mdhn: <https://github.com/MehranDHN/Khaleghi_Motlagh_Shahname#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .          # Optional WADM integration
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# Top-level
+mdhn:ShahnamehEdition a owl:Class ;
+    rdfs:label "Khaleghi-Motlagh Shahnameh Critical Edition" .
+
+mdhn:Manuscript a owl:Class ;
+    rdfs:label "Reference Manuscript" ;
+    rdfs:comment "Any witness referenced in the KM edition, including primary, secondary, and fragments." .
+
+mdhn:GLAMInstitution a owl:Class ;
+    rdfs:label "GLAM Institution" .
+
+mdhn:Verse a owl:Class ;
+    rdfs:label "Bayt / Distich" .
+
+mdhn:WordOccurrence a owl:Class ;
+    rdfs:label "Word/Token Occurrence in Verse" ;
+    rdfs:comment "Stand-off reference to a specific word or phrase for annotation." .
+
+mdhn:Annotation a owl:Class ;
+    rdfs:label "Scholarly Annotation" ;
+    rdfs:comment "Any note, etymology, variant, motif link, etc." .
+
+mdhn:NarrativeSection a owl:Class ;
+    rdfs:label "Narrative Section / Daftar / Episode" .
+
+mdhn:VerseStatus a owl:Class ;
+    rdfs:label "Verse Authenticity Status" .
+
+mdhn:siglum a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Manuscript ;
+    rdfs:range xsd:string .   # e.g., "F", "L", "P"
+
+mdhn:originalShelfmark a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Manuscript ;
+    rdfs:range xsd:string .
+
+mdhn:localPermanentID a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Manuscript ;
+    rdfs:range xsd:string ;   # e.g., "MS-F-BNCF-1217"
+    rdfs:comment "Unified scoped ID: MS-[SIGLUM]-[INST-CODE]-[YEAR or SEQ]" .
+
+mdhn:heldBy a owl:ObjectProperty ;
+    rdfs:domain mdhn:Manuscript ;
+    rdfs:range mdhn:GLAMInstitution .
+
+mdhn:date a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Manuscript ;
+    rdfs:range xsd:gYear .
+
+mdhn:completeness a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Manuscript .
+
+# Word Occurances
+mdhn:inVerse a owl:ObjectProperty ;
+    rdfs:domain mdhn:WordOccurrence ;
+    rdfs:range mdhn:Verse .
+
+mdhn:tokenText a owl:DatatypeProperty ;
+    rdfs:domain mdhn:WordOccurrence .
+
+mdhn:position a owl:DatatypeProperty ;        # Word index or char offset range
+    rdfs:domain mdhn:WordOccurrence ;
+    rdfs:range xsd:integer .
+
+mdhn:hemistichNumber a owl:DatatypeProperty ;
+    rdfs:domain mdhn:WordOccurrence ;
+    rdfs:range xsd:integer .   # 1 or 2
+
+mdhn:normalizedForm a owl:DatatypeProperty .
+
+# Annotation (Extensible — bridges to WADM/TEI)
+mdhn:hasAnnotation a owl:ObjectProperty ;
+    rdfs:domain mdhn:WordOccurrence, mdhn:Verse ;
+    rdfs:range mdhn:Annotation .
+
+mdhn:target a owl:ObjectProperty ;            # oa:hasTarget equivalent
+    rdfs:domain mdhn:Annotation ;
+    rdfs:range mdhn:WordOccurrence .
+
+mdhn:body a owl:DatatypeProperty ;            # or object for rich bodies
+    rdfs:domain mdhn:Annotation .
+
+mdhn:motivation a owl:DatatypeProperty ;      # e.g., "etymology", "mythic", "variant", "historical"
+    rdfs:domain mdhn:Annotation .
+
+mdhn:creator a owl:DatatypeProperty ;
+    rdfs:domain mdhn:Annotation .             # "Djalal Khaleghi-Motlagh" etc.
+
+mdhn:hasVerse a owl:ObjectProperty ;
+    rdfs:domain mdhn:NarrativeSection, mdhn:ShahnamehEdition ;
+    rdfs:range mdhn:Verse .
+
+mdhn:editor a owl:DatatypeProperty ;
+    rdfs:domain mdhn:ShahnamehEdition .
+
+
+
+mdhn:Original a mdhn:VerseStatus .
+mdhn:Added a mdhn:VerseStatus .
+mdhn:Omitted a mdhn:VerseStatus .
+mdhn:Dubious a mdhn:VerseStatus .
+mdhn:Corrupt a mdhn:VerseStatus .
+mdhn:Variant a mdhn:VerseStatus .
+
+
+# Concrete Temporary Instance Examples
+# Edition
+mdhn:KMEdition a mdhn:ShahnamehEdition ;
+    rdfs:label "Khaleghi-Motlagh Critical Edition" ;
+    mdhn:editor "Djalal Khaleghi-Motlagh" ;
+    dct:issued "1988-2008" .
+
+# Institution
+mdhn:BNCFlorence a mdhn:GLAMInstitution ;
+    rdfs:label "Biblioteca Nazionale Centrale di Firenze"@en ;
+    mdhn:location "Florence, Italy" .
+
+# Manuscript with unified ID
+mdhn:MS-F-BNCF-1217 a mdhn:Manuscript ;
+    mdhn:siglum "F" ;
+    mdhn:originalShelfmark "Magliabechiana III.24" ;
+    mdhn:localPermanentID "MS-F-BNCF-1217" ;
+    mdhn:date "1217"^^xsd:gYear ;
+    mdhn:heldBy mdhn:BNCFlorence ;
+    mdhn:completeness "Partial (approx. half)" .
+
+# Verse
+mdhn:Verse00001 a mdhn:Verse ;
+    mdhn:verseText "به نام خداوند جان و خرد ..." ;
+    mdhn:hemistich1 "به نام خداوند جان و خرد" ;
+    mdhn:status mdhn:Original ;
+    mdhn:attestedInManuscript mdhn:MS-F-BNCF-1217 ;
+    mdhn:partOfSection mdhn:Introduction .
+
+# Word Occurrence + Annotations
+mdhn:WO-Rostam-00001 a mdhn:WordOccurrence ;
+    mdhn:inVerse mdhn:Verse00001 ;
+    mdhn:tokenText "رستم" ;
+    mdhn:position 5 ;
+    mdhn:normalizedForm "Rostam" .
+
+mdhn:Ann-Rostam-Etym a mdhn:Annotation ;
+    mdhn:target mdhn:WO-Rostam-00001 ;
+    mdhn:body "Etymology linked to Avestan roots indicating strength and heroism." ;
+    mdhn:motivation "etymology" ;
+    mdhn:creator "Djalal Khaleghi-Motlagh" .
+
+mdhn:Ann-Rostam-Motif a mdhn:Annotation ;
+    mdhn:target mdhn:WO-Rostam-00001 ;
+    mdhn:body mdhn:Motif-HeroicCycle ;   # Link to another entity
+    mdhn:motivation "mythicReference" .
