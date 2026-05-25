@@ -1,0 +1,108 @@
+@prefix mdhn: <https://mehran.dhn/ontology/shahnama#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================
+# Verse 2 - SHN_NWSH_V002
+# =============================================
+
+mdhn:SHN_NWSH_V002 a mdhn:Verse ;
+    crm:P1_is_identified_by "SHN_NWSH_V002" ;
+    mdhn:hasHemistich mdhn:SHN_NWSH_V002_H1 ,
+                      mdhn:SHN_NWSH_V002_H2 ;
+    mdhn:teiXmlRef "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/tei/SHN_NWSH_V001-V003.xml#SHN_NWSH_V002"^^xsd:anyURI ;
+    mdhn:iiifCanvasRef "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/canvas/f29#xywh=1229,2510,2432,333"^^xsd:anyURI ;
+    skos:note "Second bayt of the Tahmuras translation passage"@en .
+
+# ── Hemistich 1 ─────────────────────────────────────
+mdhn:SHN_NWSH_V002_H1 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V002 ;
+    mdhn:order 1 ;
+    mdhn:text "چه سغدی چه چینی و چه پهلوی" .
+
+mdhn:TK_N14 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N15 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "سغدی" ;
+    mdhn:lemma "سغدی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" .
+
+mdhn:TK_N16 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N17 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "چینی" ;
+    mdhn:lemma "چینی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" .
+
+mdhn:TK_N18 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "و" ;
+    mdhn:lemma "و" ;
+    mdhn:pos "CONJ" ;
+    mdhn:subtype "coordinative" .
+
+mdhn:TK_N19 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N20 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H1 ;
+    mdhn:form "پهلوی" ;
+    mdhn:lemma "پهلوی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" .
+
+# ── Hemistich 2 ─────────────────────────────────────
+mdhn:SHN_NWSH_V002_H2 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V002 ;
+    mdhn:order 2 ;
+    mdhn:text "نگاریدن آن کجا بشنوی" .
+
+mdhn:TK_N21 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H2 ;
+    mdhn:form "نگاریدن" ;
+    mdhn:lemma "نگاریدن" ;
+    mdhn:pos "NOUN" ;
+    mdhn:subtype "verbal-noun" ;
+    mdhn:modernEquivalent "نگاشتن / نوشتن" ;
+    skos:note "Archaic form meaning 'to depict / to record'"@en .
+
+mdhn:TK_N22 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H2 ;
+    mdhn:form "آن" ;
+    mdhn:lemma "آن" ;
+    mdhn:pos "PRON" ;
+    mdhn:subtype "demonstrative" .
+
+mdhn:TK_N23 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H2 ;
+    mdhn:form "کجا" ;
+    mdhn:lemma "کجا" ;
+    mdhn:pos "ADV" ;
+    mdhn:subtype "relative" .
+
+mdhn:TK_N24 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V002_H2 ;
+    mdhn:form "بشنوی" ;
+    mdhn:lemma "شنیدن" ;
+    mdhn:pos "VERB" ;
+    mdhn:subtype "subjunctive" ;
+    skos:note "2nd person singular subjunctive" .
