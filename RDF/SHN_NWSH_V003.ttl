@@ -1,0 +1,94 @@
+@prefix mdhn: <https://mehran.dhn/ontology/shahnama#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================
+# Verse 3 - SHN_NWSH_V003
+# =============================================
+
+mdhn:SHN_NWSH_V003 a mdhn:Verse ;
+    crm:P1_is_identified_by "SHN_NWSH_V003" ;
+    mdhn:hasHemistich mdhn:SHN_NWSH_V003_H1 ,
+                      mdhn:SHN_NWSH_V003_H2 ;
+    mdhn:teiXmlRef "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/tei/SHN_NWSH_V001-V003.xml#SHN_NWSH_V003"^^xsd:anyURI ;
+    mdhn:iiifCanvasRef "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/canvas/f29#xywh=1229,2510,2432,333"^^xsd:anyURI ;
+    skos:note "Third bayt of the Tahmuras translation passage"@en .
+
+# ── Hemistich 1 ─────────────────────────────────────
+mdhn:SHN_NWSH_V003_H1 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V003 ;
+    mdhn:order 1 ;
+    mdhn:text "جهاندار سی سال ازین بیشتر" .
+
+mdhn:TK_N25 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H1 ;
+    mdhn:form "جهاندار" ;
+    mdhn:lemma "جهاندار" ;
+    mdhn:pos "NOUN" ;
+    mdhn:subtype "epithet" ;
+    skos:note "Title for king / ruler of the world"@en .
+
+mdhn:TK_N26 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H1 ;
+    mdhn:form "سی" ;
+    mdhn:lemma "سی" ;
+    mdhn:pos "NUM" ;
+    mdhn:subtype "cardinal" .
+
+mdhn:TK_N27 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H1 ;
+    mdhn:form "سال" ;
+    mdhn:lemma "سال" ;
+    mdhn:pos "NOUN" ;
+    mdhn:subtype "time" .
+
+mdhn:TK_N28 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H1 ;
+    mdhn:form "ازین" ;
+    mdhn:lemma "ازین" ;
+    mdhn:pos "ADP" ;
+    mdhn:subtype "comparative" .
+
+mdhn:TK_N29 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H1 ;
+    mdhn:form "بیشتر" ;
+    mdhn:lemma "بیشتر" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "comparative" .
+
+# ── Hemistich 2 ─────────────────────────────────────
+mdhn:SHN_NWSH_V003_H2 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V003 ;
+    mdhn:order 2 ;
+    mdhn:text "چهگونه برون آوریدی هنر" .
+
+mdhn:TK_N30 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H2 ;
+    mdhn:form "چهگونه" ;
+    mdhn:lemma "چگونه" ;
+    mdhn:pos "ADV" ;
+    mdhn:subtype "interrogative" .
+
+mdhn:TK_N31 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H2 ;
+    mdhn:form "برون" ;
+    mdhn:lemma "برون" ;
+    mdhn:pos "ADV" ;
+    mdhn:subtype "directional" .
+
+mdhn:TK_N32 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H2 ;
+    mdhn:form "آوریدی" ;
+    mdhn:lemma "آوردن" ;
+    mdhn:pos "VERB" ;
+    mdhn:subtype "past" ;
+    skos:note "2nd person singular past tense" .
+
+mdhn:TK_N33 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V003_H2 ;
+    mdhn:form "هنر" ;
+    mdhn:lemma "هنر" ;
+    mdhn:pos "NOUN" ;
+    mdhn:subtype "abstract" ;
+    skos:note "Skill / knowledge / art"@en .
