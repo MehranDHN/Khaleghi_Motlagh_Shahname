@@ -1,0 +1,122 @@
+@prefix mdhn: <https://mehran.dhn/ontology/shahnama#> .
+@prefix crm:  <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================
+# Verse 1 - SHN_NWSH_V001
+# =============================================
+
+mdhn:SHN_NWSH_V001 a mdhn:Verse ;
+    crm:P1_is_identified_by "SHN_NWSH_V001" ;
+    mdhn:hasHemistich mdhn:SHN_NWSH_V001_H1 ,
+                      mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:teiXmlRef "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/tei/SHN_NWSH_V001-V003.xml#SHN_NWSH_V001"^^xsd:anyURI ;
+    mdhn:iiifCanvasRef "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/canvas/f29#xywh=1229,2510,2432,333"^^xsd:anyURI ;
+    skos:note "First bayt of the Tahmuras translation passage"@en .
+
+# ── Hemistich 1 ─────────────────────────────────────
+mdhn:SHN_NWSH_V001_H1 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V001 ;
+    mdhn:order 1 ;
+    mdhn:text "نبشتن یکی نه که نزدیک سی" .
+
+mdhn:TK_N01 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "نبشتن" ;
+    mdhn:lemma "نبشتن" ;
+    mdhn:pos "NOUN" ;
+    mdhn:subtype "verbal-noun" ;
+    mdhn:modernEquivalent "نوشتن" ;
+    skos:note "Archaic masdar used as grammatical subject"@en .
+
+mdhn:TK_N02 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "یکی" ;
+    mdhn:lemma "یک" ;
+    mdhn:pos "NUM" ;
+    mdhn:subtype "cardinal" .
+
+mdhn:TK_N03 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "نه" ;
+    mdhn:lemma "نه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "neg" .
+
+mdhn:TK_N04 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "که" ;
+    mdhn:lemma "که" ;
+    mdhn:pos "CONJ" ;
+    mdhn:subtype "adversative" .
+
+mdhn:TK_N05 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "نزدیک" ;
+    mdhn:lemma "نزدیک" ;
+    mdhn:pos "ADV" ;
+    mdhn:subtype "approx" .
+
+mdhn:TK_N06 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H1 ;
+    mdhn:form "سی" ;
+    mdhn:lemma "سی" ;
+    mdhn:pos "NUM" ;
+    mdhn:subtype "cardinal" .
+
+# ── Hemistich 2 ─────────────────────────────────────
+mdhn:SHN_NWSH_V001_H2 a mdhn:Hemistich ;
+    mdhn:verse mdhn:SHN_NWSH_V001 ;
+    mdhn:order 2 ;
+    mdhn:text "چه رومی چه تازی و چه پارسی" .
+
+mdhn:TK_N07 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N08 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "رومی" ;
+    mdhn:lemma "رومی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" .
+
+mdhn:TK_N09 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N10 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "تازی" ;
+    mdhn:lemma "تازی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" ;
+    skos:note "Variant locus: تازی / تاری / دری / داری across witnesses"@en .
+
+mdhn:TK_N11 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "و" ;
+    mdhn:lemma "و" ;
+    mdhn:pos "CONJ" ;
+    mdhn:subtype "coordinative" .
+
+mdhn:TK_N12 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "چه" ;
+    mdhn:lemma "چه" ;
+    mdhn:pos "PART" ;
+    mdhn:subtype "correlative" .
+
+mdhn:TK_N13 a mdhn:Token ;
+    mdhn:hemistich mdhn:SHN_NWSH_V001_H2 ;
+    mdhn:form "پارسی" ;
+    mdhn:lemma "پارسی" ;
+    mdhn:pos "ADJ" ;
+    mdhn:subtype "nisba" .
