@@ -3,46 +3,9 @@
   <teiHeader>
     <fileDesc>
       <titleStmt>
-        <title>شاهنامه — داستان طهمورث — سه بیت ترجمهٔ خدای‌نامه</title>
+        <title>شاهنامه — سه بيت از پادشاهی طهمورث </title>
         <author>فردوسی</author>
-        <editor>Djalal Khaleghi-Motlagh</editor>
-      </titleStmt>
-      <publicationStmt>
-        <publisher>MehranDHN Project</publisher>
-        <date>2026</date>
-      </publicationStmt>
-      <sourceDesc>
-        <bibl>BnF Supplément Persan 490 + Khaleghi-Motlagh critical edition</bibl>
-      </sourceDesc>
-    </fileDesc>
-  </teiHeader>
-  <text>
-    <body>
-      <div type="dastan" n="tahmuras">
-        <lg type="bayt" n="1" xml:id="SHN_NWSH_V001">
-          <l xml:id="SHN_NWSH_V001_H1">نبشتن یکی نه که نزدیک سی</l>
-          <l xml:id="SHN_NWSH_V001_H2">چه رومی چه تازی و چه پارسی</l>
-        </lg>
-        <lg type="bayt" n="2" xml:id="SHN_NWSH_V002">
-          <l xml:id="SHN_NWSH_V002_H1">چه سغدی چه چینی و چه پهلوی</l>
-          <l xml:id="SHN_NWSH_V002_H2">نگاریدن آن کجا بشنوی</l>
-        </lg>
-        <lg type="bayt" n="3" xml:id="SHN_NWSH_V003">
-          <l xml:id="SHN_NWSH_V003_H1">جهاندار سی سال ازین بیشتر</l>
-          <l xml:id="SHN_NWSH_V003_H2">چهگونه برون آوریدی هنر</l>
-        </lg>
-      </div>
-    </body>
-  </text>
-  <!-- Add your full <standOff> morphology + critical apparatus here as per README -->
-</TEI><?xml version="1.0" encoding="UTF-8"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="SHN_NWSH">
-  <teiHeader>
-    <fileDesc>
-      <titleStmt>
-        <title>شاهنامه — داستان طهمورث — سه بیت ترجمهٔ خدای‌نامه</title>
-        <author>فردوسی</author>
-        <editor>Djalal Khaleghi-Motlagh</editor>
+        <editor>jalal Khaleghi Motlagh</editor>
       </titleStmt>
       <publicationStmt>
         <publisher>MehranDHN Project</publisher>
