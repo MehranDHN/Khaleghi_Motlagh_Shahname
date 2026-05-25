@@ -44,7 +44,7 @@
 This repository is a **reference implementation** for the annotation methodology
 developed in the [MDHN Shahnama Knowledge Graph](https://github.com/MehranDHN) project.
 It demonstrates how a single passage of Ferdowsi's *Shahnama* — the three bayts
-describing Nowshirwān's commissioning of the translation of the *Khwadāynāmag*
+describing Tahmuras's commissioning of the translation of the *Shahnama*
 (Book of Kings from Pahlavi) — can be encoded at three interlocking levels of granularity:
 
 | Layer | Standard | Canonical role |
@@ -145,7 +145,7 @@ making every hemistich and token reachable from SPARQL.
 **Key annotation features**
 
 - `جهاندار` — compound noun `جهان + دار` (*world-holder* / *world-ruler*);
-  epithet for Nowshirwān. Encoded `@ana="#NOUN #compound"` with `mdhn:referent "Nowshirwan"`.
+  epithet for Tahmuras. Encoded `@ana="#NOUN #compound"` with `mdhn:referent "Tahmuras"`.
 - `سی سال` — numeral + noun phrase (*thirty years*); `سال` is `NOUN(temporal-unit)`.
 - `ازین` — contracted preposition + demonstrative: `از + این`; `@ana="#PREP #clitic"`.
 - `بیش‌تر` — comparative adverb (*more*); `@ana="#ADV #comparative"`.
@@ -674,7 +674,7 @@ ORDER BY ?hemistich ?siglum
 
 ### Phase 4 · Semantic Enrichment 🔗
 
-- [ ] Wikidata reconciliation for named entities (`جهاندار` → Nowshirwān → Q199419)
+- [ ] Wikidata reconciliation for named entities (`جهاندار` → Tahmuras → Q519239)
 - [ ] Getty AAT alignment for script/language names (`پهلوی` → AAT 300388270)
 - [ ] VIAF alignment for manuscript witness records
 - [ ] `mdhn:ZoomedScene` subclass for IIIF Image API region crops of illuminated folios
