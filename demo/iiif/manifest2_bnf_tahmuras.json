@@ -5,7 +5,9 @@
   "label": { "fa": ["شاهنامه — طهمورث (BnF Supplément Persan 490)"], "en": ["Shahnama — Tahmuras Section"] },
   "metadata": [
     { "label": { "en": "Witness" }, "value": "BnF Supplément Persan 490, f.29" },
-    { "label": { "en": "Editor" }, "value": "Khaleghi-Motlagh" }
+    { "label": { "en": "Editor" }, "value": "Jalal Khaleghi Motlagh" },
+    { "label": { "en": "Designed by" }, "value": "Mehran DHN" },
+    { "label": { "en": "Description" }, "value": "An ongoing and experimental project" }      
   ],
   "seeAlso": [
     {
@@ -15,10 +17,22 @@
       "label": "TEI Critical Edition"
     },
     {
-      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V001.ttl",
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V0001.ttl",
       "type": "Text",
       "format": "text/turtle",
       "label": "RDF Data — Verse 1"
+    },
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V002.ttl",
+      "type": "Text",
+      "format": "text/turtle",
+      "label": "RDF Data — Verse 2"
+    },
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V003.ttl",
+      "type": "Text",
+      "format": "text/turtle",
+      "label": "RDF Data — Verse 3"
     }
   ],
   "items": [
