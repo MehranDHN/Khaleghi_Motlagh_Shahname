@@ -1,0 +1,35 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/iiif/manifest_bnf_tahmuras.json",
+  "type": "Manifest",
+  "label": { "fa": ["BnF Supplément Persan 490 — طهمورث"], "en": ["BnF Supplément Persan 490 — Tahmuras"] },
+  "metadata": [
+    { "label": { "en": "Witness" }, "value": "Bibliothèque nationale de France, Supplément Persan 490" },
+    { "label": { "en": "Folio" }, "value": "f.29" }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/tei/SHN_NWSH_V001-V003.xml",
+      "type": "Dataset",
+      "format": "application/tei+xml",
+      "profile": "https://tei-c.org/ns/1.0",
+      "label": { "en": ["TEI Critical Edition"] }
+    },
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/RDF/SHN_NWSH_V001.ttl",
+      "type": "Dataset",
+      "format": "text/turtle",
+      "label": { "en": ["RDF / OWL Instance Data"] }
+    }
+  ],
+  "items": [
+    {
+      "id": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/canvas/f29",
+      "type": "Canvas",
+      "label": { "en": ["f.29"] },
+      "annotations": [
+        { "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/iiif/annotations/tokens.json", "type": "AnnotationPage" }
+      ]
+    }
+  ]
+}
