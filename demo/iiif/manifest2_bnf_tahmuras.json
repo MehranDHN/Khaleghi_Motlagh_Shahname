@@ -1,0 +1,65 @@
+{
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/iiif/manifest_bnf_tahmuras.json",
+  "type": "Manifest",
+  "label": { "fa": ["شاهنامه — طهمورث (BnF Supplément Persan 490)"], "en": ["Shahnama — Tahmuras Section"] },
+  "metadata": [
+    { "label": { "en": "Witness" }, "value": "BnF Supplément Persan 490, f.29" },
+    { "label": { "en": "Editor" }, "value": "Khaleghi-Motlagh" }
+  ],
+  "seeAlso": [
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/tei/SHN_NWSH_V001-V003.xml",
+      "type": "Text",
+      "format": "application/tei+xml",
+      "label": "TEI Critical Edition"
+    },
+    {
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V001.ttl",
+      "type": "Text",
+      "format": "text/turtle",
+      "label": "RDF Data — Verse 1"
+    }
+  ],
+  "items": [
+    {
+      "id": "https://mehran.dhn/canvas/f29",
+      "type": "Canvas",
+      "label": { "en": ["f.29 — Tahmuras Section"] },
+      "width": 4336,
+      "height": 6463,
+      "items": [
+        {
+          "id": "https://mehran.dhn/annotation/page/1",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "https://mehran.dhn/annotation/image/1",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/f29/full/max/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "service": [
+                  {
+                    "@id": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b84229967/f29",
+                    "@type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level2.json"
+                  }
+                ]
+              },
+              "target": "https://mehran.dhn/canvas/f29"
+            }
+          ]
+        }
+      ],
+      "annotations": [
+        {
+          "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/main/demo/iiif/annotations/tokens.json",
+          "type": "AnnotationPage"
+        }
+      ]
+    }
+  ]
+}
