@@ -7,7 +7,7 @@
     { "label": { "en": "Witness" }, "value": "BnF Supplément Persan 490, f.29" },
     { "label": { "en": "Editor" }, "value": "Jalal Khaleghi Motlagh" },
     { "label": { "en": "Designed by" }, "value": "Mehran DHN" },
-    { "label": { "en": "Description" }, "value": "An ongoing and experimental project" }      
+    { "label": { "en": "Description" }, "value": {"en" : "An ongoing and experimental project", "fa" : "تجربه آزمايشی" }}     
   ],
   "seeAlso": [
     {
