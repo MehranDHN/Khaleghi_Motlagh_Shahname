@@ -17,19 +17,19 @@
       "label": "TEI Critical Edition"
     },
     {
-      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V0001.ttl",
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/refs/heads/main/RDF/SHN_NWSH_V0001.ttl",
       "type": "Text",
       "format": "text/turtle",
       "label": "RDF Data — Verse 1"
     },
     {
-      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V002.ttl",
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/refs/heads/main/RDF/SHN_NWSH_V002.ttl",
       "type": "Text",
       "format": "text/turtle",
       "label": "RDF Data — Verse 2"
     },
     {
-      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/RDF/SHN_NWSH_V003.ttl",
+      "id": "https://raw.githubusercontent.com/MehranDHN/Khaleghi_Motlagh_Shahname/refs/heads/main/RDF/SHN_NWSH_V003.ttl",
       "type": "Text",
       "format": "text/turtle",
       "label": "RDF Data — Verse 3"
